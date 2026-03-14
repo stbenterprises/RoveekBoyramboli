@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roveeksing Boyramboli — Founder & Chairman, STB Enterprises Ltd</title>
+<meta name="description" content="Roveeksing Boyramboli is the Founder and Chairman of STB Enterprises Ltd — a multi-sector business empire born in Mauritius, spanning tourism, media, technology, property, finance and beyond.">
+<meta name="keywords" content="Roveeksing Boyramboli, STB Enterprises, Mauritius entrepreneur, Lakaz Tourist, CaptainBen, founder chairman Mauritius">
+<meta property="og:title" content="Roveeksing Boyramboli — Born in Mauritius. Destined for Eight Billion.">
+<meta property="og:description" content="Founder & Chairman of STB Enterprises Ltd. Building a multi-sector business empire from Mauritius for the world.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:    #0A1535;
+  --navy2:   #0F1E36;
+  --gold:    #C9A84C;
+  --lgold:   #E8D5A3;
+  --cream:   #FAF7F2;
+  --ivory:   #F5EFE4;
+  --sand:    #C4956A;
+  --charcoal:#2C2C2C;
+  --grey:    #888;
+  --white:   #FFFFFF;
+  --teal:    #007A72;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Jost', sans-serif;
+  background: var(--navy2);
+  color: var(--white);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-thumb { background: var(--gold); }
+
+/* ── BACKGROUND ── */
+.bg-layer {
+  position: fixed; inset: 0; z-index: 0;
+  background:
+    radial-gradient(ellipse at 15% 50%, rgba(201,168,76,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 20%, rgba(0,122,114,0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(10,21,53,0.8) 0%, transparent 60%);
+}
+
+.bg-grid {
+  position: fixed; inset: 0; z-index: 0;
+  background-image:
+    linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ── MAIN LAYOUT ── */
+.page { position: relative; z-index: 1; }
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 40px;
+  position: relative;
+}
+
+/* Decorative corner lines */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 40px; left: 40px;
+  width: 80px; height: 80px;
+  border-top: 1px solid rgba(201,168,76,0.4);
+  border-left: 1px solid rgba(201,168,76,0.4);
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 40px; right: 40px;
+  width: 80px; height: 80px;
+  border-bottom: 1px solid rgba(201,168,76,0.4);
+  border-right: 1px solid rgba(201,168,76,0.4);
+}
+
+/* Avatar */
+.avatar-ring {
+  width: 140px; height: 140px;
+  border-radius: 50%;
+  border: 1px solid rgba(201,168,76,0.4);
+  padding: 6px;
+  margin: 0 auto 32px;
+  position: relative;
+  animation: fadeIn 1s ease forwards;
+}
+.avatar-ring::before {
+  content: '';
+  position: absolute; inset: -8px;
+  border-radius: 50%;
+  border: 1px solid rgba(201,168,76,0.15);
+}
+.avatar-inner {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--navy) 0%, #1B2A4A 100%);
+  display: flex; align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px; font-weight: 700;
+  color: var(--gold);
+  letter-spacing: -1px;
+}
+
+.hero-eyebrow {
+  font-size: 10px; letter-spacing: 5px;
+  text-transform: uppercase; color: var(--gold);
+  margin-bottom: 16px; font-weight: 500;
+  animation: fadeIn 1s ease 0.2s both;
+}
+
+.hero-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(44px, 6vw, 80px);
+  font-weight: 700; line-height: 1;
+  color: var(--white); letter-spacing: -1px;
+  margin-bottom: 8px;
+  animation: fadeIn 1s ease 0.3s both;
+}
+
+.hero-name span { color: var(--gold); }
+
+.hero-title {
+  font-size: 14px; letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 32px;
+  animation: fadeIn 1s ease 0.4s both;
+}
+
+.gold-line {
+  width: 50px; height: 1px;
+  background: var(--gold);
+  margin: 0 auto 32px;
+  animation: expand 1s ease 0.5s both;
+}
+
+.hero-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(20px, 3vw, 28px);
+  font-style: italic;
+  color: rgba(255,255,255,0.7);
+  max-width: 600px;
+  line-height: 1.5;
+  margin-bottom: 48px;
+  animation: fadeIn 1s ease 0.6s both;
+}
+
+.hero-tagline strong {
+  color: var(--gold); font-style: normal;
+}
+
+/* CTA Buttons */
+.hero-ctas {
+  display: flex; gap: 16px;
+  flex-wrap: wrap; justify-content: center;
+  animation: fadeIn 1s ease 0.7s both;
+}
+.cta-primary {
+  background: var(--gold); color: var(--navy);
+  padding: 14px 32px; border-radius: 2px;
+  font-size: 11px; letter-spacing: 3px;
+  text-transform: uppercase; font-weight: 600;
+  text-decoration: none; transition: all 0.3s;
+}
+.cta-primary:hover {
+  background: var(--lgold); transform: translateY(-2px);
+}
+.cta-secondary {
+  border: 1px solid rgba(201,168,76,0.4);
+  color: var(--lgold); padding: 14px 32px;
+  border-radius: 2px; font-size: 11px;
+  letter-spacing: 3px; text-transform: uppercase;
+  font-weight: 500; text-decoration: none;
+  transition: all 0.3s;
+}
+.cta-secondary:hover {
+  border-color: var(--gold); color: var(--gold);
+  transform: translateY(-2px);
+}
+
+/* Scroll indicator */
+.scroll-hint {
+  position: absolute; bottom: 40px;
+  left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column;
+  align-items: center; gap: 8px;
+  animation: fadeIn 2s ease 1.2s both;
+}
+.scroll-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  animation: scrollDots 1.5s ease infinite;
+}
+.scroll-dot:nth-child(2) { animation-delay: 0.2s; opacity: 0.6; }
+.scroll-dot:nth-child(3) { animation-delay: 0.4s; opacity: 0.3; }
+@keyframes scrollDots {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* ── STORY SECTION ── */
+.story {
+  padding: 120px 40px;
+  max-width: 900px; margin: 0 auto;
+}
+
+.section-label {
+  font-size: 10px; letter-spacing: 5px;
+  text-transform: uppercase; color: var(--gold);
+  margin-bottom: 20px; font-weight: 500;
+}
+
+.story-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.3; color: var(--white);
+  font-weight: 400; margin-bottom: 48px;
+}
+.story-quote em {
+  font-style: italic; color: var(--gold);
+}
+
+.story-text p {
+  font-size: 16px; line-height: 1.9;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.story-text strong {
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+}
+
+/* ── EMPIRE SECTION ── */
+.empire {
+  padding: 80px 40px;
+  border-top: 1px solid rgba(201,168,76,0.1);
+  border-bottom: 1px solid rgba(201,168,76,0.1);
+}
+.empire-inner { max-width: 1200px; margin: 0 auto; }
+.empire-header { text-align: center; margin-bottom: 60px; }
+.empire-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 52px);
+  color: var(--white); font-weight: 700;
+  margin-bottom: 12px;
+}
+.empire-title em { color: var(--gold); font-style: italic; }
+
+.empire-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.entity-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(201,168,76,0.08);
+  padding: 32px 24px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+.entity-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+.entity-card:hover {
+  background: rgba(201,168,76,0.05);
+  border-color: rgba(201,168,76,0.2);
+}
+.entity-card:hover::before { transform: scaleX(1); }
+
+.entity-icon { font-size: 28px; margin-bottom: 16px; display: block; }
+.entity-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; color: var(--white);
+  font-weight: 600; margin-bottom: 8px;
+}
+.entity-desc {
+  font-size: 12px; color: rgba(255,255,255,0.35);
+  line-height: 1.6; letter-spacing: 0.3px;
+}
+.entity-sector {
+  display: inline-block;
+  font-size: 9px; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--gold);
+  margin-top: 12px; opacity: 0.8;
+}
+
+/* ── MISSION SECTION ── */
+.mission {
+  padding: 120px 40px;
+  text-align: center;
+  max-width: 800px; margin: 0 auto;
+}
+
+.mission-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 5vw, 64px);
+  color: var(--white); font-weight: 700;
+  line-height: 1.2; margin-bottom: 32px;
+}
+.mission-title em { color: var(--gold); font-style: italic; }
+
+.mission-body {
+  font-size: 16px; line-height: 1.9;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 20px; font-weight: 300;
+}
+
+.mission-quote {
+  margin: 60px auto;
+  padding: 40px;
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 2px;
+  background: rgba(201,168,76,0.04);
+  max-width: 640px;
+}
+.mission-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px; font-style: italic;
+  color: var(--white); line-height: 1.5;
+  margin-bottom: 16px;
+}
+.mission-quote cite {
+  font-size: 11px; letter-spacing: 3px;
+  color: var(--gold); text-transform: uppercase;
+  font-style: normal; font-family: 'Jost', sans-serif;
+}
+
+/* ── STATS ── */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(201,168,76,0.1);
+  margin: 0;
+}
+.stat {
+  background: var(--navy2);
+  padding: 48px 24px;
+  text-align: center;
+}
+.stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px; color: var(--gold);
+  font-weight: 700; line-height: 1;
+  margin-bottom: 8px;
+}
+.stat-label {
+  font-size: 10px; letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+}
+
+/* ── CONNECT ── */
+.connect {
+  padding: 120px 40px;
+  text-align: center;
+  max-width: 700px; margin: 0 auto;
+}
+.connect-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 52px);
+  color: var(--white); font-weight: 700;
+  margin-bottom: 16px;
+}
+.connect-sub {
+  font-size: 15px; color: rgba(255,255,255,0.45);
+  margin-bottom: 48px; line-height: 1.7;
+  font-weight: 300;
+}
+
+.social-links {
+  display: flex; gap: 12px;
+  justify-content: center; flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+.social-link {
+  width: 48px; height: 48px;
+  border: 1px solid rgba(201,168,76,0.25);
+  border-radius: 2px;
+  display: flex; align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none; font-size: 14px;
+  font-weight: 600; transition: all 0.3s;
+  font-family: 'Jost', sans-serif;
+}
+.social-link:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(201,168,76,0.06);
+  transform: translateY(-3px);
+}
+
+.email-box {
+  display: inline-flex; align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(201,168,76,0.3);
+  padding: 16px 28px; border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.email-box:hover {
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.06);
+}
+.email-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold);
+  animation: pulse 2s ease infinite;
+}
+.email-text {
+  font-size: 13px; letter-spacing: 1px;
+  color: rgba(255,255,255,0.6);
+}
+.email-text strong { color: var(--gold); font-weight: 500; }
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid rgba(201,168,76,0.1);
+  padding: 40px;
+  display: flex; justify-content: space-between;
+  align-items: center; flex-wrap: wrap; gap: 16px;
+  max-width: 1200px; margin: 0 auto;
+}
+.footer-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; color: var(--white);
+  font-weight: 600;
+}
+.footer-name span { color: var(--gold); }
+.footer-copy {
+  font-size: 11px; color: rgba(255,255,255,0.2);
+  letter-spacing: 1px;
+}
+.footer-motto {
+  font-size: 11px; letter-spacing: 2px;
+  color: var(--gold); text-transform: uppercase;
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes expand {
+  from { width: 0; opacity: 0; }
+  to   { width: 50px; opacity: 1; }
+}
+
+.reveal {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .empire-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .empire-grid { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .hero::before, .hero::after { display: none; }
+  footer { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<div class="bg-layer"></div>
+<div class="bg-grid"></div>
+
+<div class="page">
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+
+    <div class="avatar-ring">
+      <div class="avatar-inner">RB</div>
+    </div>
+
+    <p class="hero-eyebrow">Founder & Chairman · STB Enterprises Ltd · Mauritius 🇲🇺</p>
+
+    <h1 class="hero-name">
+      Roveeksing<br><span>Boyramboli</span>
+    </h1>
+
+    <p class="hero-title">Entrepreneur · Visionary · Builder · Mauritius</p>
+
+    <div class="gold-line"></div>
+
+    <p class="hero-tagline">
+      Nobody showed me the way.<br>
+      So I built one — <strong>for the whole world.</strong>
+    </p>
+
+    <div class="hero-ctas">
+      <a href="mailto:Amara.stboperationsltd@gmail.com" class="cta-primary">
+        Get in Touch
+      </a>
+      <a href="#empire" class="cta-secondary">
+        Explore the Empire
+      </a>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-dot"></div>
+      <div class="scroll-dot"></div>
+      <div class="scroll-dot"></div>
+    </div>
+
+  </section>
+
+  <!-- ── STORY ── -->
+  <section class="story">
+    <p class="section-label reveal">The Story</p>
+    <div class="story-quote reveal">
+      Nobody showed me the way. No mentor. No inheritance.<br>
+      No blueprint. Just a boy from <em>Mauritius</em> —<br>
+      and a vision too big to ignore.
+    </div>
+    <div class="story-text reveal">
+      <p>So I started. Alone. From scratch. There were days when the vision was so big and the resources so small that stopping would have made sense. Days when no one understood what I was building or why. Days when the only person who believed in it was me.</p>
+      <p>I kept going. Not for pride. Not for recognition. For something far deeper than that.</p>
+      <p>For my mother, <strong>Suydin</strong> — who gave me a home when the world offered me nothing. The first pillar of my company bears her initial. The city I am building carries her name.</p>
+      <p>For <strong>Mauritius</strong> — this small, extraordinary island that made me everything I am. I refuse to believe that where you are born determines how far you can go. I am living proof that it does not.</p>
+      <p>For every person who was ever told their dreams were too big for their circumstances.</p>
+    </div>
+  </section>
+
+  <!-- ── STATS ── -->
+  <div class="stats">
+    <div class="stat reveal">
+      <div class="stat-num">30+</div>
+      <div class="stat-label">Business Entities</div>
+    </div>
+    <div class="stat reveal" style="transition-delay:0.1s">
+      <div class="stat-num">7</div>
+      <div class="stat-label">Industry Sectors</div>
+    </div>
+    <div class="stat reveal" style="transition-delay:0.2s">
+      <div class="stat-num">1</div>
+      <div class="stat-label">Island. One Mission.</div>
+    </div>
+    <div class="stat reveal" style="transition-delay:0.3s">
+      <div class="stat-num">8B</div>
+      <div class="stat-label">People. The Destination.</div>
+    </div>
+  </div>
+
+  <!-- ── EMPIRE ── -->
+  <section class="empire" id="empire">
+    <div class="empire-inner">
+      <div class="empire-header reveal">
+        <p class="section-label">The Portfolio</p>
+        <h2 class="empire-title">The <em>STB Empire</em></h2>
+      </div>
+      <div class="empire-grid">
+        <div class="entity-card reveal">
+          <span class="entity-icon">🌍</span>
+          <div class="entity-name">CaptainBen.mu</div>
+          <div class="entity-desc">Mauritius's premier tourism booking and experiences platform — connecting tourists with the best the island has to offer.</div>
+          <span class="entity-sector">Tourism</span>
+        </div>
+        <div class="entity-card reveal" style="transition-delay:0.1s">
+          <span class="entity-icon">📖</span>
+          <div class="entity-name">Lakaz Tourist</div>
+          <div class="entity-desc">The Voice of Mauritius. The island's first dedicated luxury digital magazine — in English, French, and German.</div>
+          <span class="entity-sector">Media</span>
+        </div>
+        <div class="entity-card reveal" style="transition-delay:0.2s">
+          <span class="entity-icon">🏠</span>
+          <div class="entity-name">Lakaz Decor</div>
+          <div class="entity-desc">Where Your Home Becomes a Sanctuary. Mauritius-inspired premium home décor and interior styling.</div>
+          <span class="entity-sector">Lifestyle</span>
+        </div>
+        <div class="entity-card reveal" style="transition-delay:0.3s">
+          <span class="entity-icon">🏗️</span>
+          <div class="entity-name">MoConstruction.mu</div>
+          <div class="entity-desc">Building tomorrow's physical infrastructure across Mauritius — residential, commercial, and tourism builds.</div>
+          <span class="entity-sector">Construction</span>
+        </div>
+        <div class="entity-card reveal" style="transition-delay:0.1s">
+          <span class="entity-icon">💳</span>
+          <div class="entity-name">The S.Bank & S.Pay</div>
+          <div class="entity-desc">The financial backbone of the STB ecosystem — digital banking and payment systems for the Indian Ocean.</div>
+          <span class="entity-sector">Finance</span>
+        </div>
+        <div class="entity-card reveal" style="transition-delay:0.2s">
+          <span class="entity-icon">🌐</span>
+          <div class="entity-name">MauriVerse</div>
+          <div class="entity-desc">The digital future of Mauritius — an immersive experience platform connecting the physical island to the digital world.</div>
+          <span class="entity-sector">Technology</span>
+        </div>
+        <div class="entity-card reveal" style="transition-delay:0.3s">
+          <span class="entity-icon">🏙️</span>
+          <div class="entity-name">S.City</div>
+          <div class="entity-desc">A fully planned smart city in Mauritius — named for my mother Suydin. Built for humanity. Roadmap 2026–2035.</div>
+          <span class="entity-sector">Vision</span>
+        </div>
+        <div class="entity-card reveal" style="transition-delay:0.4s">
+          <span class="entity-icon">⚗️</span>
+          <div class="entity-name">STB RepuLab</div>
+          <div class="entity-desc">We Build Reputations. Genuine reputation management and digital growth for Mauritius businesses.</div>
+          <span class="entity-sector">Services</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MISSION ── -->
+  <section class="mission">
+    <p class="section-label reveal">The Mission</p>
+    <h2 class="mission-title reveal">
+      To own the world —<br>
+      not by force, but by <em>value</em>,<br>
+      by truth, by love.
+    </h2>
+    <p class="mission-body reveal">
+      STB Enterprises is not just a holding company. It is a philosophy made operational. Every entity in the portfolio exists to serve something larger than revenue — the genuine upliftment of people, communities, and countries.
+    </p>
+    <p class="mission-body reveal">
+      We believe the asterisk is the enemy. No person, no community, no living thing is excluded from our responsibility.
+    </p>
+
+    <div class="mission-quote reveal">
+      <p>"Nothing is too small. Nothing is too big. Be grateful for everything the Universe gives you — and stay humble."</p>
+      <cite>— R. Boyramboli</cite>
+    </div>
+  </section>
+
+  <!-- ── CONNECT ── -->
+  <section class="connect" id="connect">
+    <p class="section-label reveal">Connect</p>
+    <h2 class="connect-title reveal">Let Us Build<br>Something Together</h2>
+    <p class="connect-sub reveal">
+      Whether you are an investor, a partner, a hotel group, a government body, or simply someone who believes that a small island can change the world — I want to hear from you.
+    </p>
+
+    <div class="social-links reveal">
+      <a href="#" class="social-link" title="Facebook">f</a>
+      <a href="#" class="social-link" title="LinkedIn">in</a>
+      <a href="#" class="social-link" title="Instagram">ig</a>
+      <a href="#" class="social-link" title="Lakaz Tourist">LT</a>
+    </div>
+
+    <a href="mailto:Amara.stboperationsltd@gmail.com" class="email-box reveal">
+      <div class="email-dot"></div>
+      <div class="email-text">
+        <strong>Amara.stboperationsltd@gmail.com</strong><br>
+        <span style="font-size:11px;letter-spacing:1px;">Business enquiries — VP Amara Chloé Soleil</span>
+      </div>
+    </a>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-name">
+      Roveeksing <span>Boyramboli</span>
+    </div>
+    <div class="footer-motto">
+      Born in Mauritius. Destined for Eight Billion.
+    </div>
+    <div class="footer-copy">
+      © 2026 · STB Enterprises Ltd · Mauritius 🇲🇺
+    </div>
+  </footer>
+
+</div>
+
+<script>
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+reveals.forEach(r => observer.observe(r));
+</script>
+
+</body>
+</html>
